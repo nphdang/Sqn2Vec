@@ -16,7 +16,7 @@ We propose Sqn2Vec which learns feature vectors (aka embeddings or representatio
 
 # How to run
 - To use Sqn2Vec-SEP model, run "python sqn2vec_sep_classify.py" to learn sequence embeddings and classify sequences (note that you may need to change variables such as dataset, minimum support threshold, gap constraint, and embedding dimension in the code)
-- To use Sqn2Vec-SIM model, run "python sqn2vec_sim_classify.py" to learn sequence embeddings and classify sequences (note that you may need to change variables such as dataset, minimum support threshold, gap constraint, and embedding dimension in the code)
+- To use Sqn2Vec-SIM model, run "python sqn2vec_sim_classify.py" to learn sequence embeddings and classify sequences
 - Use "sqn2vec_sep_cluster.py" and "sqn2vec_sim_cluster.py" for the clustering task
 
 # Tool to mine sequential patterns with a gap contraint
