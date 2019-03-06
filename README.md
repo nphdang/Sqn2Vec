@@ -21,8 +21,7 @@ We propose Sqn2Vec which learns feature vectors (aka embeddings or representatio
 
 # Tool to mine sequential patterns with a gap contraint
 - File sp_miner.exe can be used as a standalone tool to discover sequential patterns
-- It runs fast
-- Its source code is in "sp_miner.zip"
+- It runs fast and its source code is in "sp_miner.zip"
 - Its parameters are as follows:
 ```
         -dataset <file>
