@@ -1,12 +1,12 @@
-# Sqn2Vec: Unsupervised Learning Sequence Embeddings via Sequential Patterns with Gap Constraint
+# Sqn2Vec: Unsupervised Learning Sequence Embeddings via Sequential Patterns
 This is the implementation of the Sqn2Vec method in the paper "Sqn2Vec: Learning Sequence Representation via Sequential Patterns with a Gap Constraint", ECML-PKDD 2018: https://link.springer.com/chapter/10.1007/978-3-030-10928-8_34
 
 # Introduction
-A sequence dataset consists of multiple sequences, and each sequence is an ordered list of discrete symbols (items). It can be seen in many real-world applications, e.g., text mining, action recognition, navigation analysis, system diagonosis, and so on.
+A sequence dataset consists of multiple sequences, and each sequence is an ordered list of discrete symbols (items). It can be seen in many real-world applications, e.g., text mining, action recognition, navigation analysis, system diagnosis, and so on.
 
 There are two types of machine learning tasks on sequences, namely sequence classification and sequence clustering. However, to apply machine learning methods to sequences, we need to construct/learn feature vectors for sequences first.
 
-We propose Sqn2Vec which learns feature vectors (aka embeddings or representations) for sequences. Sqn2Vec combines two important techniques in data mining and machine learning: sequential pattern mining and neural embedding learning. It first decomposes each sequence into a set of sequential patterns (SPs) and then learns an embedding for each sequence by predicting its belonging SPs. It has two models: (1) Sqn2Vec-SEP which learns sequence embeddings from symbols and SPs seperately and (2) Sqn2Vec-SIM which learns sequence embeddings from symbols and SPs simultaneously.
+We propose Sqn2Vec which learns feature vectors (aka embeddings or representations) for sequences. Sqn2Vec combines two important techniques in data mining and machine learning: sequential pattern mining and neural embedding learning. It first decomposes each sequence into a set of sequential patterns (SPs) and then learns an embedding for each sequence by predicting its belonging SPs. It has two different models: (1) Sqn2Vec-SEP which learns sequence embeddings from symbols and SPs separately and (2) Sqn2Vec-SIM which learns sequence embeddings from symbols and SPs simultaneously.
 
 ![Sqn2Vec: Two models](https://github.com/nphdang/Sqn2Vec/blob/master/two_models.jpg)
 
@@ -19,9 +19,9 @@ We propose Sqn2Vec which learns feature vectors (aka embeddings or representatio
 - To use Sqn2Vec-SIM model, run "python sqn2vec_sim_classify.py" to learn sequence embeddings and classify sequences
 - Use "sqn2vec_sep_cluster.py" and "sqn2vec_sim_cluster.py" for the clustering task
 
-# Tool to mine sequential patterns with a gap contraint
-- File sp_miner.exe can be used as a standalone tool to discover sequential patterns
-- It runs fast and its source code is in "sp_miner.zip"
+# Tool to mine sequential patterns
+- File "sp_miner.exe" can be used as a standalone tool to discover sequential patterns
+- Its source code is in "sp_miner.zip"
 - Its parameters are as follows:
 ```
         -dataset <file>
